@@ -1,0 +1,250 @@
+/* =========================
+   Body & Background
+========================= */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #fdfdfd; /* Pure white background */
+    color: #333; /* Dark text for readability */
+}
+
+/* =========================
+   Header
+========================= */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #fff8e1, #fff3e0); /* Soft golden-white gradient */
+    border-bottom: 2px solid #ffd700; /* Gold border for rich look */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.3rem;
+    color: #b8860b; /* Dark golden */
+    text-shadow: 0 0 8px rgba(218,165,32,0.6); /* subtle glow */
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #8b6d1a; /* Golden brown */
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffd700;
+}
+
+.diyas {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #ffb74d;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    height: 80vh;
+    background: url("../images/bg-stars.jpg") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.85); /* White translucent overlay */
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255,215,0,0.2); /* golden soft glow */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #b8860b; /* Golden text */
+    text-shadow: 0 0 6px rgba(218,165,32,0.5);
+}
+
+.shloka {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color: #6b4226; /* Deep brown */
+    line-height: 1.8;
+    font-style: italic;
+    text-shadow: 0 0 4px rgba(218,165,32,0.3);
+}
+
+.tagline {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* =========================
+   Sections
+========================= */
+.section {
+    padding: 50px 25px;
+    background: #fffdfa; /* Soft cream */
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 1000px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    text-align: center;
+    color: #b8860b;
+    margin-bottom: 20px;
+    text-shadow: 0 0 3px rgba(218,165,32,0.3);
+}
+
+/* =========================
+   Gallery
+========================= */
+/* About Page Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* space between images */
+}
+
+.gallery img {
+    width: 300px;       /* size of each image */
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid #ffd700; /* gold border for rich look */
+    box-shadow: 0 0 25px rgba(218,165,32,0.4); /* subtle golden glow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(218,165,32,0.6);
+}
+
+/* Responsive: stack images on smaller screens */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 80%; /* images take most of screen width */
+        margin: 10px 0;
+    }
+}
+
+
+/* =========================
+   Services
+========================= */
+.services li {
+    list-style: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(218,165,32,0.2);
+}
+
+/* =========================
+   WhatsApp Button
+========================= */
+.whatsapp {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ffcc80, #ffd54f);
+    color: #5d4037; /* Dark brown text */
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 0 15px rgba(255,193,7,0.3);
+    transition: all 0.3s ease;
+}
+
+.whatsapp:hover {
+    box-shadow: 0 0 25px rgba(255,193,7,0.5);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff8e1;
+    border-top: 2px solid #ffd700;
+    color: #5d4037;
+    box-shadow: 0 -2px 10px #00000008;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .shloka {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Services Gallery */
+.services-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Frame for each service */
+.service-frame {
+    width: 120px;         /* fixed frame size */
+    height: 120px;
+    border-radius: 20px;
+    border: 3px solid #ffd700;           /* gold frame */
+    box-shadow: 0 8px 20px rgba(218,165,32,0.4); /* soft glow */
+    overflow: hidden;                     /* ensures image doesn't spill outside frame */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(255,215,0,0.15), rgba(255,255,255,0.05)); /* soft glow background */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Image inside the frame */
+.service-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill the frame completely without distortion */
+}
+
+/* Hover effect */
+.service-frame:hover {
+    transform: scale(1.15);
+    box-shadow: 0 12px 35px rgba(218,165,32,0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-frame {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+
+
+
+
+

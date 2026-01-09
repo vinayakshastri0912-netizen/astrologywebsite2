@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section services-section">
+    <h2>ನಮ್ಮ ಸೇವೆಗಳು</h2>
+
+    <ul class="services">
+        <li>🔮 ಜಾತಕ ವಿಶ್ಲೇಷಣೆ</li>
+        <li>🪔 ವಾಸ್ತು ಸಲಹೆ</li>
+        <li>📿 ಪೂಜೆ ಮತ್ತು ಪರಿಹಾರಗಳು</li>
+        <li>💍 ವಿವಾಹ ಹೊಂದಾಣಿಕೆ</li>
+        <li>💼 ವೃತ್ತಿ ಮತ್ತು ವ್ಯವಹಾರ ಮಾರ್ಗದರ್ಶನ</li>
+    </ul>
+
+   <div class="services-gallery">
+    <div class="service-frame">
+        <img src="{{ url_for('static', filename='images/horoscope.png') }}" alt="Horoscope">
+    </div>
+    <div class="service-frame">
+        <img src="{{ url_for('static', filename='images/vastu.png') }}" alt="Vastu">
+    </div>
+    <div class="service-frame">
+        <img src="{{ url_for('static', filename='images/pooja.png') }}" alt="Pooja">
+    </div>
+    <div class="service-frame">
+        <img src="{{ url_for('static', filename='images/marriage.png') }}" alt="Marriage">
+    </div>
+    <div class="service-frame">
+        <img src="{{ url_for('static', filename='images/career.png') }}" alt="Career">
+    </div>
+</div>
+
+</section>
+
+{% endblock %}

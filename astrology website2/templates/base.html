@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ಶ್ರೀ ಪಂಚಮುಖಿ ಜ್ಯೋತಿಷ್ಯಾಲಯ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header>
+    <h1>🔱 ಶ್ರೀ ಪಂಚಮುಖಿ ಜ್ಯೋತಿಷ್ಯಾಲಯ 🔱</h1>
+    <p>ನಕ್ಷತ್ರಗಳು ಮತ್ತು ಶಾಸ್ತ್ರಗಳಿಂದ ಮಾರ್ಗದರ್ಶನ</p>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/location">Location</a>
+    </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer>
+    <p>© 2026 Shri Panchmukhi Jyotishyalaya</p>
+</footer>
+
+</body>
+</html>
